@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bibliotheque.xsl" ?>
+<!-- <!DOCTYPE bibliotheque SYSTEM "bibliotheque.dtd"> -->
+<bibliotheque xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="bibliotheque.xsd">
+    <livres>
+        <livre num="L001">
+            <titre>Introduction à XML</titre>
+            <auteur>
+                <nom>Jean Dupont</nom>
+                <email>jean.dupont@example.com</email>
+            </auteur>
+            <categorie>Informatique</categorie>
+            <datePublication>2023</datePublication>
+            <resume>Un guide complet pour comprendre XML.</resume>
+            <editeur>
+                <nom>TechBooks</nom>
+                <adresse>
+                    <rue>123 Rue Informatique</rue>
+                    <ville>Paris</ville>
+                    <pays>France</pays>
+                </adresse>
+            </editeur>
+            <emprunt>
+                <emprunteur>
+                    <nom>Sophie Martin</nom>
+                    <email>sophie.martin@example.com</email>
+                </emprunteur>
+                <dateEmprunt>2024-07-01</dateEmprunt>
+                <dateRetour>2024-07-15</dateRetour>
+            </emprunt>
+        </livre>
+        <livre num="L002">
+            <titre>Apprendre XSLT</titre>
+            <auteur>
+                <nom>Marie Claire</nom>
+                <email>marie.claire@example.com</email>
+            </auteur>
+            <categorie>Programmation</categorie>
+            <datePublication>2022</datePublication>
+            <resume>Transformer XML en HTML avec XSLT.</resume>
+            <editeur>
+                <nom>CodeWorld</nom>
+                <adresse>
+                    <rue>45 Avenue DevOps</rue>
+                    <ville>Lyon</ville>
+                    <pays>France</pays>
+                </adresse>
+            </editeur>
+            <emprunt>
+                <emprunteur>
+                    <nom>Sophie Martin</nom>
+                    <email>sophie.martin@example.com</email>
+                </emprunteur>
+                <dateEmprunt>2024-07-01</dateEmprunt>
+                <dateRetour>2024-07-15</dateRetour>
+            </emprunt>
+        </livre>
+    </livres>
+    
+    <utilisateurs>
+        <utilisateur id="U001">
+            <nom>Sophie Martin</nom>
+            <email>sophie.martin@example.com</email>
+            <role>Lecteur</role>
+        </utilisateur>
+
+        <utilisateur id="U002">
+            <nom>Alex Dupuis</nom>
+            <email>alex.dupuis@example.com</email>
+            <role>Administrateur</role>
+        </utilisateur>
+    </utilisateurs>
+    
+    <parametres>
+        <parametre>
+            <nom>NombreMaximumEmprunts</nom>
+            <valeur>5</valeur>
+        </parametre>
+        <parametre>
+            <nom>DuréeMaximaleEmprunt</nom>
+            <valeur>14 jours</valeur>
+        </parametre>
+    </parametres>
+</bibliotheque>

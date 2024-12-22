@@ -1,0 +1,34 @@
+<!ELEMENT bibliotheque (livres*, utilisateurs*, parametres)>
+
+<!ELEMENT livres (livre*)>
+<!ELEMENT utilisateurs (utilisateur+)>
+<!ELEMENT parametres (parametre+)>
+
+<!ELEMENT livre (titre, auteur+, categorie, datePublication, resume, editeur*, emprunt*)>
+<!ELEMENT auteur (nom, email)>
+<!ELEMENT editeur (nom, adresse+)>
+<!ELEMENT adresse (rue, ville, pays)>
+<!ELEMENT emprunt (emprunteur, dateEmprunt, dateRetour)>
+
+<!ELEMENT emprunteur (nom, email)>
+<!ELEMENT dateEmprunt (#PCDATA)>
+<!ELEMENT dateRetour (#PCDATA)>
+
+
+<!ELEMENT utilisateur (nom, email, role)>
+<!ELEMENT parametre (nom, valeur)>
+
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT categorie (#PCDATA)>
+<!ELEMENT datePublication (#PCDATA)>
+<!ELEMENT resume (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT rue (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT pays (#PCDATA)>
+<!ELEMENT role (#PCDATA)>
+<!ELEMENT valeur (#PCDATA)>
+
+<!ATTLIST livre num ID #REQUIRED>
+<!ATTLIST utilisateur id ID #REQUIRED>
